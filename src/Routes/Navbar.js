@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import MobNav from '../MobNav'
-import home from '../Images/preview_edited.jpg'
+// import home from '../Images/preview_edited.jpg'
 const Navbar = () => {
   return (
     <div>
