@@ -1,38 +1,445 @@
+*{
+  margin: 0px;
+  padding: 0px;
+box-sizing:border-box ;
+}
+.Font-Small{
+  cursor: pointer;
+  font-weight: bold;
+}
+.Font-Small a{
+  text-decoration: none;
+  color: #000;
+}
 .App {
   text-align: center;
+  width: 100vw;
+  border:5px ridge grey;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+.img{
+  height: 30px;
+  width: 30px;
+}
+h4 a{
+  text-decoration: none;
+  color: black;
+}
+header{
+  height: 40vh;
+}
+header nav{
+  height: 15vh;
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navright ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin: 1.5rem; 
+  font-size: 1em;
+  font-weight: bold;
+}
+.navright ul li:hover{
+color: grey;
+text-decoration: underline;
+text-underline-offset: 1rem;
+text-decoration-color: black;
+cursor:pointer;
+}
+li a{
+  text-decoration: none;
+  color: black;
+}
+/* nav h4{
+  font-family: '';
+} */
+.baumans-regular {
+  font-family: "Baumans", system-ui;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.5em;
+}
+header #hamburgernav{
+  display: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ProfileWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+  width: 100vw;
+  margin: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ProfileImg{
+  width: 40vw;
+}
+.imgWrapper{
+  height: 200px;
+  width: 200px;
+  background-color: rgb(218, 217, 217);
+  border-radius: 50%;
+  float: right;
+}
+.Details{
+  width: 50vw;
+}
+.Social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.linkedinimg{
+height: 30px;
+width: 30px;
+margin: 10px;
+}
+.Githubimg{
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+  
+}
+.btn{
+  height: 50px;
+  width: 120px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 15px;
+}
+.dbtn{
+  background-color: white;
+}
+.dbtn:hover{
+  box-shadow: 0 0 5px 5px grey;
+}
+.Cbtn{
+  background-color: rgb(99, 97, 97);
+}
+.Cbtn:hover{
+  box-shadow: 0 0 5px 5px rgb(41, 40, 40);
+}
+button a{
+  text-decoration: none;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.KnowMoreTxt{
+  height: 70px;
+  width: 100%;
+  margin: auto auto;
+}
+.ALLWrap{
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.aboutImg{
+  height: 200px;
+  width: 200px;
+  background-color: rgb(223, 216, 216);
+}
+#aboutImg{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.abbox{
+  height: 200px;
+   width: 300px;
+   border: 1px solid black;
+   border-radius: 20px;
+}
+.abexp,.abed{
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.abli{
+  margin: auto auto;
+  font-size: large;
+  text-align: justify;
+  width: 90%;
+}
+.abli li{
+  margin: 5px;
+  list-style-type: circle;
+}
+.AssessmentProjects{
+  width: 100%;
+}
+.AllProjectsWrapper{
+  height: 100%;
+  width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   margin-top: -50px;
+}
+.ProjectCard{
+  height: 300px;
+  width: 270px;
+  border: 1px solid black;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: whitesmoke;
+}
+.ProjectCard:hover{
+   transform: translateY(-5px);
+   box-shadow: 0 0 5px 5px rgb(219, 217, 217);
+
+}
+.Projimg{
+  height: 180px;
+  width: 268px;
+}
+.ProjectTitle{
+  height: medium;
+  text-align: center;
+  font-weight: bold;
+}
+.btns{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  align-items: center;
+  padding-top: 20px;
+}
+.prbtn a{
+  text-decoration: none;
+  color: darkgray;
+}
+.prbtn a:hover{
+  text-decoration: none;
+  color: black;
+}
+.prbtn{
+    min-width: 120px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 15px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #3a3c41;
+    color: #85878a;
+  }
+  .prbtn:hover {
+    color: #fff;
+  }
+  .prbtn:hover:after {
+    width: 100%;
+  }
+  .prbtn:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #777b7e;
+  }
+  .imgPr{
+    height: 180px;
+    width: 260px;
+    padding-top: 20px;
+    border-radius: 20px;
+  }
+.EMAILANDIN{
+  height: 130px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: auto auto;
+  margin-top: 50px;
+}
+.EntireWrapperExp{
+  height: 400px;
+  width: 96vw;
+  margin: auto auto;
+  display: flex;
+  justify-content: space-around;
+}
+.FNDDEVWrapper{
+  height:300px;
+  width: 320px;
+  border: 1px solid black;
+  border-radius:20px ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.FNDDEVWrapper table{
+  margin: auto auto;
+  /* width: 100%; */
+  text-align: center;
 }
+.BCKNDDEVWrapper{
+  height:300px;
+  width: 320px;
+  border: 1px solid black;
+  border-radius:20px ;
+}
+.BCKNDDEVWrapper table{
+margin: auto auto;
+text-align: center;
+}
+
+.Tickimg{
+  height: 30px;
+  width: 30px;
+  margin-left: 0px;
+}
+/* .TickText{
+  margin-top: -10px;
+} */
+@media screen and (min-width:350px) and (max-width:650px) {
+  header nav{
+  display: none;
+  }
+  header #hamburgernav{
+    display: flex;
+  }
+  .hamMenu{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+.hamburger-icon span {
+  transform: rotate(0deg) translate(0px, 0px); 
+}
+
+#menu ul {
+  list-style-type: none;
+}
+
+#menu ul.visible {
+text-align: center;  
+  display: block;
+  z-index: 3;
+  font-size: 1em;
+  font-weight: bold;
+
+}
+#menu ul.visible:hover{
+color: grey;
+text-decoration: underline;
+text-underline-offset: 1rem;
+text-decoration-color: black;
+cursor:pointer;
+}
+
+#menu ul.hidden {
+  display: none;
+}
+.hamburger-icon {
+  display: inline-flex;
+  flex-direction: column;
+  width: 30px;
+  height: 30px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.hamburger-icon.open {
+  animation: rotate 0.3s ease-in-out forwards;
+}
+
+.line {
+  width: 23px;
+  height: 3px;
+  background-color: #000;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.top {
+  transform-origin: 0 0;
+}
+
+.middle {
+  transform-origin: 0 50%;
+}
+
+.bottom {
+  transform-origin: 0 100%;
+}
+
+.open .top {
+  transform: rotate(45deg) translate(0.5px, 0.5px);
+}
+
+.open .middle {
+  opacity: 0;
+}
+
+.open .bottom {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.cross {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.cross-line {
+  width: 20px;
+  height: 3px;
+  background-color: #000;
+  display: block;
+  position: absolute;
+}
+
+.cross-line.left {
+  transform: rotate(45deg);
+}
+
+.cross-line.right {
+  transform: rotate(-45deg);
+} 
+.EntireWrapperExp{
+flex-direction: column;
+height: auto;
+}
+.FNDDEVWrapper{
+margin:3px 10px;
+}
+.BCKNDDEVWrapper{
+  margin:3px 10px;
+
+}
+.ALLWrap{
+flex-direction: column;
+height: auto;
+justify-content: space-around;
+align-items: center;
+gap: 20px;
+}
+}
+
