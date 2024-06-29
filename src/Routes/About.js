@@ -18,7 +18,7 @@ const About = () => {
  <div className='abexp abbox'>
   <img src='https://static.thenounproject.com/png/4679201-200.png' className='img' alt='Exp'/>
   <h3 style={{marginTop:"5px"}}> Experience</h3>
-  <h4>Fresher In Development Field</h4>
+  <h4>Fresher in IT Field.</h4>
 <h5>0.11 Months Exp in IT Recruitment Field </h5>
 
  </div>
